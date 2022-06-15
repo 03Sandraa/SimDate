@@ -1,0 +1,300 @@
+:root{
+    --lovemeterW: ;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("../images/achtergrond.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50em;
+    height: 35em;
+    margin: 2% 0 0 0;
+    background-color: rgb(255, 255, 255);
+    border: rgb(138, 138, 138) solid 1px;
+    border-radius: 30px;
+    position: relative;
+    background-image: url("../images/achtergrond2.jpg");
+}
+
+img[src="images/simdatelogo.svg"]{
+    position: absolute;
+    width: 20%;
+    top: -2%;
+    left: -3%;
+}
+
+.lovemeter {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border: rgb(182, 92, 92) solid 1px ;
+    border-radius: 10px;
+    margin: 10% 0 0 0;
+    position: relative;
+}
+
+.progress {
+    margin: 0.5% 0 0.5% 0.7%;
+    height: 15px;
+    width: var(--lovemeterW);
+    background-image: linear-gradient(to right, #b51b34 , #e37386);
+    border-radius: 20px;
+    transition: ease 1000ms;
+}
+
+img[src="images/hart.svg"] {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -7%;
+    top: -100%;
+}
+
+.tekstballon {
+    background-image: url("../images/tekstballon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+    height: 13%;
+    padding: 4% 5% 5% 5%;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+
+
+.persoon {
+    width: 30em;
+    height: 18em;
+    margin: 3% 0 0 0;
+    position: relative;
+}
+
+.persoon img {
+    width: 42%;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+}
+
+.knoppen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 5% 0 0 0;
+
+}
+
+.knoppen img {
+    width: 65px;
+    height: 65px;    
+    opacity: 75%;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.knoppen img:hover{
+    opacity: 100%;
+    transition: 500ms;
+    transform: scale(1.1);
+}
+
+.weggaanscherm {
+    position: absolute;
+    width: 45%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    top: 30%;
+    padding: 5%;
+    border: rgb(196, 196, 196) solid 1px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weggaanscherm p:first-of-type{
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.weggaanscherm p:nth-of-type(2){
+    margin: 4% 0;
+}
+
+.weggaanscherm div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2% 0 0 0;
+    width: 100%;
+}
+
+.weggaanscherm button{
+    padding: 2%;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.weggaanscherm img[src="images/hartjes4.svg"]{
+    position: absolute;
+    width: 55px;
+    left: -5%;
+    bottom: -5%;
+}
+
+.coverButtons{
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    bottom: 5%;
+}
+
+.gewonnen {
+    width: 75%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: rgb(196, 196, 196) solid 1px;
+    position: absolute;
+    top: 21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gewonnen p:first-of-type{
+    margin: 10% 0 5% 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+}
+
+.gewonnen p:nth-child(2){
+    width: 55%;
+    text-align: center;
+}
+
+.gewonnen p:nth-child(3){
+    width: 55%;
+    text-align: center;
+    font-size: 0.7em;
+    color: rgb(124, 124, 124);
+    margin: 2% 0 0 0;
+}
+
+.gewonnen p:nth-child(4){
+    text-align: center;
+    margin: 10% 0% 0% 0%;
+}
+
+.gewonnen img[src="images/knoppen/knopopnieuwactive.svg"]{
+    width: 55px;
+    height: 55px;
+    margin: 3% 0% 0% 0%;
+    opacity: 50%;
+    transition: 500ms;
+}
+
+.gewonnen img[src="images/knoppen/knopopnieuwactive.svg"]:hover{
+    opacity: 70%;
+    transition: 500ms;
+}
+
+.gewonnen img[src="images/hartjes1.svg"] {
+    position: absolute;
+    width: 10%;
+    bottom: -5%;
+    left: -3%;
+}
+
+.gewonnen img[src="images/hartjes2.svg"] {
+    position: absolute;
+    width: 15%;
+    right: -3%;
+    top: -5%;
+}
+
+.verloren {
+    width: 75%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: rgb(196, 196, 196) solid 1px;
+    position: absolute;
+    top: 21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verloren p:first-of-type{
+    margin: 10% 0 2% 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+}
+
+.verloren p:nth-child(2){
+    width: 55%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2em;
+    margin: 0 0 2% 0;
+}
+
+.verloren p:nth-child(4){
+    width: 55%;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgb(124, 124, 124);
+    margin: 2% 0;
+}
+
+.verloren p:nth-child(5){
+    text-align: center;
+    margin: 3% 0% 0% 0%;
+}
+
+.verloren img[src="images/knoppen/knopopnieuwactive.svg"]{
+    width: 55px;
+    height: 55px;
+    margin: 3% 0% 0% 0%;
+    opacity: 50%;
+    transition: 500ms;
+}
+.verloren img[src="images/knoppen/knopopnieuwactive.svg"]:hover{
+    opacity: 70%;
+    transition: 500ms;
+}
+
+.verloren img[src="images/hartjes3.svg"] {
+    position: absolute;
+    width: 10%;
+    bottom: -5%;
+    right: -3%;
+}
+
+.verloren img[src="images/hartjes4.svg"] {
+    position: absolute;
+    width: 10%;
+    top: -5%;
+    left: -3%;
+}
+
+.hide {
+    display: none;
+}

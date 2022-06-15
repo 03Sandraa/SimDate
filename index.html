@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimDate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/simdatelogo.svg" alt="Logo SimDate">
+        <div class="lovemeter">
+            <div class="progress"></div>
+            <img src="images/hart.svg" alt="hart">
+        </div>
+        <div>
+            <div class="tekstballon">
+                <p class="responstekst"></p>
+            </div>
+            <div class="persoon">
+                <img class="gezichtsuitdrukking" src="images/personen/1/neutraal1.svg" alt="Je date">
+            </div>
+        </div>
+        <div class="knoppen">
+            <img src="images/knoppen/knopflirtactive.svg" alt="Flirt" class="flirt">
+            <img src="images/knoppen/knopzoenenactive.svg" alt="Kus" class="kus">
+            <img src="images/knoppen/knoppratenactive.svg" alt="Praten" class="praten">
+            <img src="images/knoppen/knopluisterenactive.svg" alt="Luisteren" class="luisteren">
+            <img src="images/knoppen/knopruzienactive.svg" alt="Ruziën" class="ruziemaken">
+            <img src="images/knoppen/knopnegerenactive.svg" alt="Negeren" class="negeren">
+            <img src="images/knoppen/knopweggaanactive.svg" alt="Weg gaan" class="weggaan">
+        </div>
+        <div class="weggaanscherm">
+            <p>Weg gaan?</p>
+            <p>Weet je zeker dat je je date wilt verlaten?</p>
+            <div>
+                <button class="btnJa">Ja</button>
+                <button class="btnNee">Nee</button>
+            </div>
+            <img src="images/hartjes4.svg" alt="Gebroken hart">
+        </div>
+        <div class="coverButtons"></div>
+        <div class="gewonnen">
+            <p>Gewonnen!</p>
+            <p>Je date vindt je helemaal geweldig!</p>
+            <p class="gewonnenAdvies"> </p>
+            <p>Opnieuw spelen?</p>
+            <img src="images/knoppen/knopopnieuwactive.svg" alt="Begin opnieuw" class="opnieuwG">
+            <img src="images/hartjes1.svg" alt="Hartjes">
+            <img src="images/hartjes2.svg" alt="Hartjes">
+            <!-- Bron geluidseffect the Sims 3 -->
+            <audio class="audio1" src="assets/thesims3soundeffects1.mp3"></audio>
+        </div>
+        <div class="verloren">
+            <p>Verloren..</p>
+            <p>:(</p>
+            <p>Hoe is dat nou gebeurd?</p>
+            <p class="verliesAdvies"></p>
+            <p>Opnieuw spelen?</p>
+            <img src="images/knoppen/knopopnieuwactive.svg" alt="Begin opnieuw" class="opnieuwV">
+            <img src="images/hartjes3.svg" alt="Gebroken hart">
+            <img src="images/hartjes4.svg" alt="Gebroken hart">
+            <!-- Bron geluidseffect the Sims 3 -->
+            <audio class="audio2" src="assets/thesims3soundeffects2.mp3"></audio>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
